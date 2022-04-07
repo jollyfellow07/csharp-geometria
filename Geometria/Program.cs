@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using Geometria;
+
+Rettangolo myRectangle = new Rettangolo(10,10);
+myRectangle.calcolaArea();
+myRectangle.calcolaPerimetrp();
+
