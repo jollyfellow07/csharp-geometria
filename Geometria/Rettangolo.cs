@@ -32,7 +32,7 @@ namespace Geometria
           int  perimetro = (baseRettangolo + altezzaRettangolo)*2;
             return perimetro;
         }
-        public void stamparettangolo(int area, int perimetro)
+        public void stampaRettangolo(int area, int perimetro)
         {
             Console.WriteLine("*************RETTANGOLO*************");
             Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo);
