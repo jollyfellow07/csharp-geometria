@@ -54,5 +54,6 @@ do
             break;
         default:
             Console.WriteLine("scelta non corretta");
+            variabile = true;
             break;     
     } while (variabile == false);

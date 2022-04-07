@@ -43,7 +43,7 @@ namespace Geometria
 
         public void disegno()
         {
-            //righe = altezza-colonne = base
+            //righe = altezza        colonne = base
             for (int i = 0; i < (int)altezzaRettangolo; i++)
             {
                 for(int j = 0; j < (int)baseRettangolo; j++)
