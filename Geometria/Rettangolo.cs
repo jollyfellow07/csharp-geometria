@@ -40,6 +40,39 @@ namespace Geometria
             Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro + " cm");
             Console.WriteLine("L'area del mio rettangolo è: " + area + " cm2");
         }
+
+        public void disegno()
+        {
+            //righe = altezza-colonne = base
+            for (int i = 0; i < (int)altezzaRettangolo; i++)
+            {
+                for(int j = 0; j < (int)baseRettangolo; j++)
+                {
+                    //se ci troviamo nella prima riga oppure l'ultima stampiamo le righe di lunghezza base
+                    if (i == 0 || i == (altezzaRettangolo - 1))
+                    {
+                        Console.Write("-");
+
+                    }
+                    //altrimenti se ci troviamo nella prima o ultima colonna stampiamo i lati sinistra e destra
+                    else if (j == 0 || j == (baseRettangolo - 1))
+                    {
+                        Console.Write("|");
+                    }
+                    //altrimenti stampiamo il vuoto
+                    else {
+                        Console.Write(" ");
+                    }
+                }
+                //alla fine di ogni riga andiamo a capo
+                Console.Write("\n");
+
+            }
+         
+
+
+        }
+
     }
 }
     
