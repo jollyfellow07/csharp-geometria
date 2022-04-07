@@ -23,16 +23,22 @@ namespace Geometria
         public int calcolaArea()
         {
            int area = baseRettangolo * altezzaRettangolo;
-            Console.WriteLine("L'area del mio rettangolo è: " + area);
             return area;
         }
 
         //Metodo per calcolare il perimetro
-        public int calcolaPerimetrp()
+        public int calcolaPerimetro()
         {
           int  perimetro = (baseRettangolo + altezzaRettangolo)*2;
-            Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro);
             return perimetro;
+        }
+        public void stamparettangolo(int area, int perimetro)
+        {
+            Console.WriteLine("*************RETTANGOLO*************");
+            Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo);
+            Console.WriteLine("L'altezza del mio rettangolo è: " + altezzaRettangolo);
+            Console.WriteLine("L'area del mio rettangolo è: " + area);
+            Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro);
         }
     }
 }
