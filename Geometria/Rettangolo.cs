@@ -8,37 +8,37 @@ namespace Geometria
 {
     internal class Rettangolo
     {
-        private int baseRettangolo;
-        private int altezzaRettangolo;
+        private double baseRettangolo;
+        private double altezzaRettangolo;
 
 
         //Costruttore con parametri di base e altezza
-        public Rettangolo(int baseRettangolo, int altezzaRettangolo)
+        public Rettangolo(double baseRettangolo, double altezzaRettangolo)
         {
             this.baseRettangolo = baseRettangolo;
             this.altezzaRettangolo = altezzaRettangolo;
         }
 
         //Metodo per calcolare l'area
-        public int calcolaArea()
+        public double calcolaArea()
         {
-           int area = baseRettangolo * altezzaRettangolo;
+           double area = (double)baseRettangolo * (double)altezzaRettangolo;
             return area;
         }
 
         //Metodo per calcolare il perimetro
-        public int calcolaPerimetro()
+        public double calcolaPerimetro()
         {
-          int  perimetro = (baseRettangolo + altezzaRettangolo)*2;
+          double  perimetro = (baseRettangolo + altezzaRettangolo)*2;
             return perimetro;
         }
-        public void stampaRettangolo(int area, int perimetro)
+        public void stampaRettangolo(double area, double perimetro)
         {
             Console.WriteLine("*************RETTANGOLO*************");
-            Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo);
-            Console.WriteLine("L'altezza del mio rettangolo è: " + altezzaRettangolo);
-            Console.WriteLine("L'area del mio rettangolo è: " + area);
-            Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro);
+            Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo +" cm");
+            Console.WriteLine("L'altezza del mio rettangolo è: " + altezzaRettangolo + " cm");
+            Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro + " cm");
+            Console.WriteLine("L'area del mio rettangolo è: " + area + " cm2");
         }
     }
 }
