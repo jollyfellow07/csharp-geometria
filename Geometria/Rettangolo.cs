@@ -32,18 +32,19 @@ namespace Geometria
           double  perimetro = (baseRettangolo + altezzaRettangolo)*2;
             return perimetro;
         }
-        public void stampaRettangolo(double area, double perimetro)
+        public void stampaRettangolo()
         {
             Console.WriteLine("*************RETTANGOLO*************");
             Console.WriteLine("La base del mio rettangolo è: " + baseRettangolo +" cm");
             Console.WriteLine("L'altezza del mio rettangolo è: " + altezzaRettangolo + " cm");
-            Console.WriteLine("Il perimetro del mio rettangolo è: " + perimetro + " cm");
-            Console.WriteLine("L'area del mio rettangolo è: " + area + " cm2");
+            Console.WriteLine("Il perimetro del mio rettangolo è: " + calcolaPerimetro() + " cm");
+            Console.WriteLine("L'area del mio rettangolo è: " + calcolaArea() + " cm2");
+            
         }
 
         public void disegno()
         {
-            //righe = altezza        colonne = base
+            //righe = altezza   -     colonne = base
             for (int i = 0; i < (int)altezzaRettangolo; i++)
             {
                 for(int j = 0; j < (int)baseRettangolo; j++)

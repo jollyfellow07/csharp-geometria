@@ -4,7 +4,7 @@ using Geometria;
 Rettangolo myRectangle1 = new Rettangolo(20,10);
 myRectangle1.calcolaArea();
 myRectangle1.calcolaPerimetro();
-myRectangle1.stampaRettangolo(myRectangle1.calcolaArea(), myRectangle1.calcolaPerimetro());
+myRectangle1.stampaRettangolo();
 
 //Compongo il mio rettangolo
 Console.Write("\ninserisci la base del tuo rettangolo: ");
@@ -15,7 +15,7 @@ Console.Write("\n\n");
 Rettangolo myRectangle2 = new Rettangolo(laBase, altezza);
 myRectangle2.calcolaArea();
 myRectangle2.calcolaPerimetro();
-myRectangle2.stampaRettangolo(myRectangle2.calcolaArea(), myRectangle2.calcolaPerimetro());
+myRectangle2.stampaRettangolo();
 Console.ReadKey();
 Console.Clear();
 
@@ -28,9 +28,9 @@ do
     {
         case ("si"):
             Console.Write("Di quale rettangolo vuoi stampare il disegno?\n\tSCELTA NUMERO 1 \n\n");
-            myRectangle1.stampaRettangolo(myRectangle1.calcolaArea(), myRectangle1.calcolaPerimetro());
+            myRectangle1.stampaRettangolo();
             Console.Write("\n\n\tSCELTA NUMERO 2 \n\n");
-            myRectangle2.stampaRettangolo(myRectangle2.calcolaArea(), myRectangle2.calcolaPerimetro());
+            myRectangle2.stampaRettangolo();
             Console.WriteLine("\n\nInserisci la tua scelta [1/2]");
             string numero = Console.ReadLine();
             Console.Clear();
